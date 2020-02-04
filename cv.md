@@ -11,7 +11,7 @@ It's essential for me that my job is done well, so I'm ready to spent as much ti
 * *tools:* Visual Studio, Visual Studio Code, Intellij IDEA;
 * *version control:* GitHub.
 ### Experience:
-* a blog site ([link to GitHub](https://github.com/anna274/blog.git));
+* a blog site;
 * tasks from Coursera courses "Algorithms. Path 1" in Java;
 * a course project in C++.
 ### Education:
