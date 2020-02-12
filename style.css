@@ -40,9 +40,6 @@
 
 .intro img {
     grid-area: img;
-    width: 120px;
-    height: auto;
-    float: right;
     border-radius: 50%;  
 }
 .contact-1{
