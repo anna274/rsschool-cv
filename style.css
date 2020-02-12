@@ -1,0 +1,115 @@
+.container {
+    width: 700px;
+    height: 1110px;
+    margin: auto;
+    padding: 55px 50px 30px 50px;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    border: 1px solid rgb(192, 169, 142);
+}
+
+#grid {
+    display: grid;
+    grid-template-areas: 
+    "intro intro-img"
+    "summary summary"
+    "list-1 list-2"
+    "list-3 list-4"
+    "code code";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 140px 165px 150px 145px 400px;
+    margin: auto;
+    grid-row-gap: 30px;
+    grid-gap:red;
+}
+.intro {
+    grid-area: intro;
+    display: grid;
+    grid-template-areas: 
+    "name img"
+    "contact-1 img"
+    "contact-2 img"
+    ;
+    grid-template-columns: 480px 120px;
+    grid-template-rows: 70px 25px 25px;
+}
+.intro .name{
+    font-size: 29px;
+    font-weight: bold;   
+}
+
+.intro img {
+    grid-area: img;
+    width: 120px;
+    height: auto;
+    float: right;
+    border-radius: 50%;  
+}
+.contact-1{
+    grid-area: contact-1;
+}
+.contact-2{
+    grid-area: contact-2;
+}
+.contact {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 25px;
+}
+.summary {
+    grid-area: summary;
+    border-bottom: 2px solid #F9D59E;
+}
+.title {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+p {
+    font-size: 15px;
+}
+
+.list-1 {
+    grid-area: list-1;
+}
+.list-2 {
+    grid-area: list-2;
+}
+.list-3 {
+    grid-area: list-3;
+    border-bottom: 2px solid #F9D59E;
+}
+.list-4 {
+    grid-area: list-4;
+    border-bottom: 2px solid #F9D59E;
+}
+#grid ul {
+    margin: 15px;
+    padding: 0;
+}
+#grid li {
+    color: #ac6a2c;
+    font-size: 15px;
+    line-height: 17px;
+}
+#grid li span {
+    color: black;
+}
+tool {
+    color: #523e2c;
+    font-style: italic;
+}
+.code-example {
+    grid-area: code;
+}
+.code {
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    white-space: pre;
+    background-color: #F4F4F4;
+    border-radius: 10px;   
+}

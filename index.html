@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Rusakovich Anna</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id="grid">
+        <div class="intro">
+          <div class="name">Rusakovich Anna</div>
+          <div class="contact contact-1"><strong>e-mail</strong>: anna_rusakovich.01@mail.ru</div>
+          <div class="contact contact-2"><strong>phone</strong>: +375 (44) 750-17-36</div>
+          <img src="image.jpg" alt="photo">
+        </div>
+        <div class="summary">
+          <div class="title">
+            Summary
+          </div>
+          <p>My goal is to try my hand at Web development, to learn bacics and to use it in creating real projects and in solving different issues. 
+            I want to practice skills in working with GIT version control and some web development tools and frameworks. 
+            An improving soft skills is also important for me. It includes communication, stress resistance and an ability to find information fast. 
+            It’s essential for me that my job is done well, so I’m ready to spent as much time as needed for it. 
+            My forte is time manegement. I know how to prioritize tasks and how to complete them before deadlines.</p>
+        </div>
+        <div class="list list-1 padding-l">
+          <div class="title">Skills</div>
+          <ul>
+            <li><span>programming languages:<tool> C++,<br>JavaScript basics, Java basics</tool></span></li>
+            <li><span>frameworks:<tool> Laravel</tool></span></li>
+            <li><span>tools:<tool> Visual Studio, Visual<br> Studio Code, Intellij IDEA</tool></span></li>
+            <li><span>version control:<tool> GitHub</tool></span></li>
+          </ul>
+        </div>
+        <div class="list list-3 padding-l">
+          <div class="title">Experience</div>
+          <ul>
+            <li><span>a simple blog site (Laravel)</span></li>
+            <li><span>tasks from Coursera courses<br>"Algorithms. Path 1" in Java</span></li>
+            <li><span>a course project in C++</span></li>
+          </ul>
+        </div>
+        <div class="list list-2">
+          <div class="title">Education</div>
+          <ul>
+            <li><span>Belarusian State University of informatics and radioelectronics (2 course)</span></li>
+            <li><span>Coursera "Algorithms. Path 1", online courses</span></li>
+            <li><span>HTMLAcademy, online courses</span></li>
+          </ul>
+        </div>
+        <div class="list list-4">
+          <div class="title">English</div>
+          <ul>
+            <li><span>an intermidiate level B1</span></li>
+            <li><span>learning technical English at university<br>(1 year)</span></li>
+            <li><span>International House courses<br> (7 mounths)</span></li>
+          </ul>
+        </div>
+        <div class="code-example">
+          <div class="title">Code examples</div>
+          <div class="code">
+public function index()
+{
+  $posts = Post::all();            
+  return view('posts.index')->withPosts($posts);
+}
+          </div>
+          <div class="code">
+public function show($id)
+{   
+  $post = Post::find($id);
+  $posts = Post::where('category_id', $post->category_id)->get();      
+  $print = (isset($_GET['print']))?'print':'default';
+                
+  return view('posts.show', compact('print', 'post', 'posts'));
+}
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+  </body>
+</html>
